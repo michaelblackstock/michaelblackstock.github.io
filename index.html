@@ -1,50 +1,321 @@
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Michael Blackstock: America's Automation Leader at IBM. Discover my experience helping enterprises transform through AI-powered automation, platform engineering, and leadership." />
-    <link rel="canonical" href="https://globaldrum.com/" />
-    <title>Michael Blackstock – America&#8217;s Automation Leader at IBM &#8211; Blackstock</title>
-    <link rel="alternate" type="application/rss+xml" title="Blackstock &raquo; Feed" href="feed/index.html" />
-    <link rel="alternate" type="application/rss+xml" title="Blackstock &raquo; Comments Feed" href="comments/feed/index.html" />
-    <!-- Original inline CSS and WordPress styles here ... -->
-    <!-- (leave other CSS, fonts, scripts as is for now) -->
+  <meta charset="UTF 8">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <title>Michael Blackstock, Globaldrum</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0f62fe;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 16px 64px;
+    }
+
+    .brand {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #6b7280;
+      margin-bottom: 12px;
+    }
+
+    .hero {
+      background: #ffffff;
+      padding: 40px 32px;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+      margin-bottom: 32px;
+    }
+
+    .hero-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .hero-photo {
+      flex: 0 0 auto;
+    }
+
+    .hero-photo img {
+      max-width: 260px;
+      width: 100%;
+      border-radius: 16px;
+      display: block;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      flex: 1 1 280px;
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 2rem;
+      margin: 0 0 8px 0;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #4b5563;
+      margin: 0 0 16px 0;
+    }
+
+    .hero-lede {
+      font-size: 1rem;
+      margin: 0 0 12px 0;
+    }
+
+    .hero-note {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin: 0;
+    }
+
+    .hero-button-row {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .hero-button {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      background: #0f62fe;
+      color: #ffffff;
+      box-shadow: 0 6px 18px rgba(15, 98, 254, 0.35);
+    }
+
+    .hero-button:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .hero-muted-link {
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    .layout-two {
+      display: grid;
+      grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.4fr);
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .section {
+      background: #ffffff;
+      padding: 24px 24px 28px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+      margin-bottom: 20px;
+    }
+
+    .section h2 {
+      font-size: 1.25rem;
+      margin: 0 0 8px 0;
+    }
+
+    .section h3 {
+      font-size: 1.05rem;
+      margin: 16px 0 4px 0;
+    }
+
+    .section p {
+      margin: 4px 0 0 0;
+      font-size: 0.98rem;
+    }
+
+    .section small {
+      display: block;
+      font-size: 0.85rem;
+      color: #6b7280;
+      margin-top: 2px;
+    }
+
+    .tagline {
+      font-size: 0.95rem;
+      color: #4b5563;
+      margin-top: 8px;
+    }
+
+    .footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #9ca3af;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 28px 20px;
+      }
+
+      .hero-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero-photo img {
+        max-width: 220px;
+      }
+
+      .layout-two {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
 </head>
-<body class="wp-singular page-template page-template-miketesttemple page page-id-183 wp-embed-responsive wp-theme-twentytwentyfour multiple-domain-www-globaldrum-com">
-    <!-- Accessible skip link for screen readers -->
-    <a href="#main-content" class="skip-link screen-reader-text" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
-    <!-- Simple top navigation -->
-    <nav aria-label="Main navigation" style="background:#222;padding:1em 0;text-align:center;">
-        <a href="#about" style="margin:0 1em;color:#fff;text-decoration:none;">About</a>
-        <a href="#credentials" style="margin:0 1em;color:#fff;text-decoration:none;">Credentials</a>
-        <a href="#contact" style="margin:0 1em;color:#fff;text-decoration:none;">Contact</a>
-    </nav>
-    <div class="wp-site-blocks">
-        <main id="main-content" class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
-            <section id="about" class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
-                <h1 class="wp-block-post-title" style="font-size:2.5em;margin-top:1em;">Michael Blackstock – America&#8217;s Automation Leader at IBM</h1>
-                <p><strong>Client Engineering</strong></p>
-                <p>Welcome to my professional page! Here you&#8217;ll discover my journey as America&#8217;s Automation Leader at IBM&#8217;s Client Engineering and how I channel decades of experience into empowering clients.</p>
-                <figure class="wp-block-media-text__media" style="margin:2em 0;text-align:center;">
-                    <img alt="Photo of Michael Blackstock" width="450" height="600" src="wp-content/uploads/2025/11/image.png" style="max-width:100%;height:auto;border-radius:8px;box-shadow:0 2px 16px rgba(0,0,0,0.15);"/>
-                </figure>
-                <p><strong>Passionate about guiding enterprises through AI-powered automation, I lead with a focus on sustainable transformation and measurable outcomes. My credentials span multiple automation and platform disciplines.</strong></p>
-            </section>
-            <section id="credentials" style="padding:2em 0;">
-                <h2 class="wp-block-heading">Credentials</h2>
-                <p>With over 26 years at IBM, I’ve honed my craft across software development, platform engineering, and now automation leadership.</p>
-                <p>As America’s Automation Leader in IBM’s Client Engineering division, I drive Fast-Start programs, orchestrate platform engineering outcomes, and lead AI-enabled client adoption across the enterprise.</p>
-                <p>My mission is to harness cutting-edge automation technologies to help clients innovate faster, reduce manual overhead, and scale their operations with confidence.</p>
-            </section>
-            <section id="contact" style="padding:2em 0;">
-                <h2 class="wp-block-heading">Contact</h2>
-                <p><em>Let’s connect:</em></p>
-                <a href="https://www.linkedin.com/in/michael-blackstock-49ba4b3/" style="display:inline-block;padding:0.75em 2em;background:#2D72D9;color:white;text-decoration:none;font-size:1.1em;border-radius:4px;box-shadow:0 4px 8px rgba(0,0,0,0.08);margin:1em 0;">Connect with me on LinkedIn</a>
-                <p>Beyond numbers and certifications, my journey is about inspiring teams, forging strategic partnerships, and exploring the art of what&#8217;s possible with automation. I aim to spark innovation and leadership in every engagement.</p>
-                <p>When I&#8217;m not leading automation transformations, I enjoy exploring Massachusetts&#8217; trails and staying active in our community. I invite you to connect and explore how we can innovate together.</p>
-            </section>
-        </main>
-    </div>
-    <!-- (leave scripts and footers as original for now) -->
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="hero-inner">
+        <figure class="hero-photo">
+          <!-- Replace with your actual image source -->
+          <img src="https://www.globaldrum.com/wp-content/uploads/2025/11/image.png" alt="Michael Blackstock">
+        </figure>
+
+        <div class="hero-text">
+          <div class="brand">Globaldrum</div>
+          <h1>Michael Blackstock</h1>
+          <p class="hero-subtitle">
+            Americas Automation Leader, IBM Client Engineering
+          </p>
+          <p class="hero-lede">
+            I help organizations turn automation and AI into measurable outcomes. From strategy through pilots and Fast Start programs, I work with clients and IBM teams to modernize platforms, remove manual work and build solutions that can scale.
+          </p>
+          <p class="hero-note">
+            Based in the United States, with more than twenty years of experience across enterprise software, platforms and modernization.
+          </p>
+
+          <div class="hero-button-row">
+            <a class="hero-button" href="https://www.linkedin.com/in/michaelblackstock" target="_blank" rel="noopener">
+              Connect with me on LinkedIn
+            </a>
+            <span class="hero-muted-link">
+              Or email me directly at <a href="mailto:michael@globaldrum.com">michael@globaldrum.com</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="layout-two">
+      <article class="section">
+        <h2>What I Do</h2>
+        <p>
+          I lead automation work in IBM Client Engineering across the Americas. My focus is on practical, outcome driven engagements that bring together AI, automation platforms and client teams.
+        </p>
+        <p>
+          Much of my work centers on Fast Start programs, short and intensive efforts where we stand up real environments, build working use cases and give executives a clear view of value and next steps.
+        </p>
+
+        <h3>Engagement style</h3>
+        <p>
+          I like to keep work grounded in real systems and real data. That means building on existing platforms, connecting to live sources and proving value quickly, rather than staying at slide level for too long.
+        </p>
+      </article>
+
+      <aside class="section">
+        <h2>At a Glance</h2>
+        <p>
+          Role  
+          <small>Americas Automation Leader, IBM Client Engineering</small>
+        </p>
+        <p>
+          Focus areas  
+          <small>Automation, AI adoption, platform modernization, client workshops and Fast Start programs</small>
+        </p>
+        <p>
+          Location  
+          <small>United States</small>
+        </p>
+        <p>
+          Connect  
+          <small><a href="https://www.linkedin.com/in/michaelblackstock" target="_blank" rel="noopener">LinkedIn profile</a></small>
+        </p>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2>Background and Experience</h2>
+      <p>
+        I have spent most of my career working with clients on large systems, middleware and automation. That includes modernization efforts around application servers, integration, observability and more recent work with AI powered assistants and automation patterns.
+      </p>
+      <p>
+        In IBM Client Engineering I partner closely with sales, technical specialists and client teams. Together we design pilots that can move from experiment to production. I focus on clear scoping, realistic timelines and strong collaboration across business and technical stakeholders.
+      </p>
+      <p>
+        Earlier in my career I held technical and leadership roles that covered software development, systems engineering and client focused delivery. That mix helps me translate between executive goals and engineering realities.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Education and Credentials</h2>
+      <p>
+        Formal education  
+        <small>Master of Science in Systems Engineering, Bachelor of Science in Computer Science</small>
+      </p>
+      <p>
+        Professional focus  
+        <small>Automation and AI in enterprise settings, with emphasis on measured outcomes and sustainable architectures</small>
+      </p>
+      <p>
+        Ongoing learning  
+        <small>Continuous work with client pilots, internal enablement sessions and emerging IBM capabilities across automation and data</small>
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Contact</h2>
+      <p>
+        For speaking, collaboration or client related work, the best starting point is LinkedIn or email.
+      </p>
+      <p>
+        LinkedIn  
+        <small><a href="https://www.linkedin.com/in/michaelblackstock" target="_blank" rel="noopener">linkedin.com/in/michaelblackstock</a></small>
+      </p>
+      <p>
+        Email  
+        <small><a href="mailto:michael@globaldrum.com">michael@globaldrum.com</a></small>
+      </p>
+    </section>
+
+    <footer class="footer">
+      © <span id="year"></span> Globaldrum, All rights reserved
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
